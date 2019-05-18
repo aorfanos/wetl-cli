@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# use another API key - possible rate limit reach
 API_KEY="i8tq2MrALERSuz11xR7vaogtnKTHjjtaTdaX79L3"
 
 #retrieve jwt
@@ -10,8 +11,6 @@ JWT=$(curl -s -X POST "https://dev.wetransfer.com/v2/authorize" \
 	-d '{"user_identifier":"5ee6e98e-ddee-4f5b-9d03-7bd4d91aa05f"}' | jq -r '.token') 
 testfile=$1
 size=$(wc -c $testfile | cut -d" " -f1)
-
-#echo "JWT:$JWT"
 
 echo "Creating transfer..."
 create_transfer(){
