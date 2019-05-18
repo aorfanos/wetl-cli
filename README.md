@@ -1,10 +1,10 @@
-#wetl-cli
+# wetl-cli
 A simple, one-function CLI for uploading files to WeTransfer.
 
 Uses: WeTransfer API (https://developers.wetransfer.com/documentation)
 Requirements: curl,jq
 
-###Usage
+### Usage
 ```
 wetl-cli <file>
 
@@ -12,4 +12,4 @@ wetl-cli <file>
 wetl-cli ~/Downloads/file.zip
 ```
 
-####[DEMO](https://asciinema.org/a/uW3saSnUhMZm2lZH7B4Cw7fmC)
+#### [DEMO](https://asciinema.org/a/uW3saSnUhMZm2lZH7B4Cw7fmC)
